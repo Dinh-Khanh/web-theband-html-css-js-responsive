@@ -1,0 +1,79 @@
+/* PC */
+@media (min-width: 64em) {
+}
+
+/* Tablet */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+}
+/* Tablet and mobile */
+@media (max-width: 63.9375em) {
+  .buy-btn {
+    padding: 15px 16px !important;
+  }
+  .contact-guess .input-inf {
+    padding: 15px;
+  }
+  #footer .footer-icon {
+    font-size: 40px;
+  }
+  #footer .footer-icon a {
+    padding: 8px;
+    display: inline-block;
+  }
+  .footer-text p {
+    font-size: 28px;
+    padding: 12px 0;
+    display: inline-block;
+  }
+  .subnav li a {
+    padding: 4px 12px;
+  }
+  .contact-host li {
+    line-height: 2;
+  }
+}
+/* Mobile */
+@media (max-width: 46.1875em) {
+  .s-col-full,
+  .s-width-full {
+    width: 100%;
+  }
+  .s-mt-8 {
+    margin-top: 8px;
+  }
+  .name-section .name-img {
+    width: 60%;
+  }
+  .tour-date .space-item {
+    margin-top: 16px;
+  }
+  #header {
+    overflow: hidden;
+  }
+  #header .search-btn {
+    display: none;
+  }
+  #header .mobile-menu-btn {
+    display: block;
+  }
+  #nav {
+    display: block;
+  }
+  #nav > li {
+    display: block;
+  }
+  #nav > li:first-child {
+    display: inline-block;
+  }
+  #nav .subnav {
+    position: initial;
+    background-color: #333;
+  }
+  .subnav li a {
+    color: #fff;
+    padding: 5px 41px;
+  }
+  .contact-guess {
+    margin-top: 32px;
+  }
+}

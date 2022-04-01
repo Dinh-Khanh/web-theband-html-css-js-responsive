@@ -1,0 +1,438 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#header {
+  height: 46px;
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.clear {
+  clear: both;
+}
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+#nav {
+  display: inline-block;
+}
+#nav,
+.subnav {
+  list-style: none;
+}
+#nav li:hover > a {
+  background-color: #ccc;
+  color: #000;
+}
+#nav > li {
+  display: inline-block;
+  position: relative;
+}
+#nav li a {
+  display: block;
+  text-decoration: none;
+}
+#nav > li > a {
+  color: #fff;
+  padding: 0 22px;
+  line-height: 46px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+#nav li:hover .subnav {
+  display: block;
+}
+#nav .subnav {
+  background-color: #fff;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  font-size: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+.subnav li {
+  min-width: 160px;
+  line-height: 38px;
+}
+.subnav li a {
+  padding-left: 12px;
+  color: #000;
+}
+.more-icon {
+  font-size: 12px;
+}
+
+.search-btn,
+.mobile-menu-btn {
+  float: right;
+}
+.mobile-menu-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
+.search-btn .search-icon,
+.mobile-menu-btn .menu-icon {
+  color: #fff;
+  line-height: 46px;
+  padding: 0 24px;
+  font-size: 14px;
+}
+.mobile-menu-btn:hover .menu-icon {
+  background-color: #ccc;
+  color: #000;
+}
+.search-btn:hover .search-icon {
+  background-color: salmon;
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+}
+#slider {
+  position: relative;
+  padding-top: 50%;
+  margin-top: 46px;
+  background: url("/assets/img/chicago.jpg") top center / cover no-repeat;
+}
+.slider-content {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  padding: 32px 0;
+}
+.slider-heading {
+  margin: 10px 0;
+  font-weight: 500;
+  font-size: 24px;
+}
+.slider-sub-heading {
+  margin: 15px 0;
+  font-weight: 500;
+  font-size: 15px;
+  text-shadow: 0 0 1px #000;
+}
+.content-section {
+  width: 800px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 64px 0;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.content-heading {
+  text-align: center;
+  font-weight: 500;
+  font-size: 30px;
+  margin: 10px 0;
+}
+.content-sub-heading {
+  text-align: center;
+  font-style: italic;
+  opacity: 0.6;
+  font-size: 15px;
+  margin: 15px 0;
+}
+.content-text {
+  text-align: justify;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.mt-32 {
+  margin-top: 32px;
+}
+.row {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.col {
+  float: left;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.col-third {
+  width: 33.33333%;
+}
+.col-half {
+  width: 50%;
+}
+.col-full {
+  width: 100%;
+}
+.name-section {
+  padding: 32px 0;
+  text-align: center;
+}
+.name {
+  font-size: 15px;
+  text-align: center;
+  padding: 15px;
+}
+.name-img {
+  width: 153.578px;
+  border-radius: 4px;
+}
+.tour-date {
+  background-color: #000;
+  color: #fff;
+}
+.ticket-section {
+  margin-top: 32px 0;
+  margin-bottom: 16px 0;
+  list-style: none;
+  background-color: #fff;
+}
+.ticket-section li {
+  font-size: 15px;
+  border-bottom: 1px solid #ddd;
+  color: #757575;
+  line-height: 38px;
+  padding: 0 16px;
+}
+.ticket-section li .sold-out {
+  font-size: 15px;
+  margin-left: 16px;
+  padding: 4px 8px;
+  background-color: brown;
+  color: #fff;
+}
+.ticket-section li .sticket-november {
+  color: #fff;
+  width: 22px;
+  line-height: 22px;
+  border-radius: 50%;
+  background-color: #000;
+  float: right;
+  text-align: center;
+  margin-top: 10px;
+}
+.space-content {
+  width: 100%;
+  font-size: 15px;
+  background-color: #fff;
+  color: #000;
+  padding: 0 16px;
+  display: inline-block;
+}
+.space-section {
+  margin-top: 16px;
+}
+.space-item .space-img {
+  width: 100%;
+  display: block;
+}
+.space-item .space-img:hover {
+  opacity: 0.6;
+}
+.space-content .space-heading {
+  font-size: 15px;
+  margin: 15px 0;
+}
+.space-content .space-sub-heading {
+  margin: 15px 0;
+  opacity: 0.6;
+}
+.space-content .space-text {
+  margin: 15px 0;
+}
+.space-content .buy-btn {
+  font-size: 15px;
+  margin-bottom: 16px;
+  padding: 8px 16px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+}
+.space-content .buy-btn:hover {
+  background-color: #ccc;
+  color: #000;
+  cursor: pointer;
+}
+.modal.open {
+  display: flex;
+}
+.modal {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.modal .modal-section {
+  width: 900px;
+  max-width: calc(100% - 150px);
+  background-color: #fff;
+  color: #000;
+  animation: modaleffect ease 0.4s;
+}
+.modal .modal-header {
+  background-color: #009688;
+  padding: 42px 0;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+.modal-heading {
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 4px;
+}
+.modal-header .close-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 16px;
+  font-size: 12px;
+  font-weight: 800;
+}
+.modal-header .close-icon:hover {
+  background-color: darkred;
+  font-size: 14px;
+  cursor: pointer;
+}
+.modal-body {
+  padding: 0 16px;
+}
+.modal-body label {
+  font-size: 15px;
+  margin: 16px 0;
+  display: block;
+  font-weight: 500;
+}
+.modal-body input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  margin: 16px 0;
+}
+.modal-pay-btn:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+.modal-pay-btn {
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  background-color: #009688;
+  padding: 16px;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 16px 0;
+}
+.modal-pay-btn .check-icon {
+  font-size: 12px;
+}
+.help-section {
+  float: right;
+  margin-right: 16px;
+  font-size: 15px;
+  padding: 8px 0;
+  margin-bottom: 8px;
+}
+.help-section a {
+  color: #2196f3;
+}
+.contact-inf {
+  margin-top: 40px;
+}
+.contact-host {
+  list-style: none;
+}
+.contact-host a {
+  color: #00e;
+  opacity: 0.8;
+}
+.contact-host a:hover {
+  opacity: 1;
+}
+.contact-host li {
+  font-size: 18px;
+  line-height: 1.5;
+}
+.contact-host li i {
+  padding-right: 10px;
+}
+.contact-guess .input-inf {
+  width: 100%;
+  padding: 8px;
+  font-size: 15px;
+}
+.contact-guess .input-message {
+  margin: 8px 0;
+}
+.contact-guess .input-send {
+  padding: 12px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  float: right;
+  margin-bottom: 28px;
+  margin-top: 10px;
+}
+.contact-guess .input-send:hover {
+  background-color: #ccc;
+  color: #000;
+  cursor: pointer;
+}
+.map-img {
+  width: 100%;
+}
+#content {
+}
+#footer {
+  text-align: center;
+  padding: 64px 0;
+  color: #757575;
+}
+#footer .footer-icon {
+  margin: 20px 0;
+  font-size: 22px;
+}
+#footer .footer-icon a {
+  color: #757575;
+  text-decoration: none;
+}
+#footer .footer-icon i:hover {
+  opacity: 0.6;
+}
+#footer .footer-text {
+  margin: 16px 0;
+  font-size: 15px;
+}
+.footer-text a {
+  color: #757575;
+}
+@keyframes modaleffect {
+  from {
+    transform: translateY(-150px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
